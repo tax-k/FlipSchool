@@ -12,6 +12,10 @@
             font-family: monospace;
         }
 
+        h2 {
+            color: #000;
+        }
+
         p {
             background: green;
         }
@@ -28,17 +32,17 @@
             color: #000;
             display: block;
         }
-
     </style>
 </head>
 
 <body>
     <div>
+        <h2>Block elements <span style="color: red;">vs</span> Inline elements</h2>
         <p>파라그래프 태그는 블럭레벨 엘리먼트입니다. 배경색으로 채워지는 부분을 보시면 알 기 쉽습니다. </p>
         <em>반면에</em> <em>이건</em> <em>인라인 요소입니다.</em> <a href="">앙카 태그도 마찬가지구요. </a>
 
     </div>
-    <h2>Attributes</h2>
+    <h2 style="color: #000;">Attributes</h2>
 
     <a href="http://home.modulabs.co.kr" target="_blank" title="모두의연구소 홈페이지에서 풀잎 신청하기">풀잎 신청하기</a>
 
@@ -47,33 +51,36 @@
     <input type="text" disabled="disabled">
 
     <div>
-        <p>&lt;p&gt; 태그는 이렇게 작성합니다. &lt;/p&gt;</p>
+        <p style="background: #fff; color:#000;">&lt;p&gt; 태그 글자는 html entities를 이용하여 이렇게 작성합니다. &lt;/p&gt;</p>
 
     </div>
 
-    <h2>input 타입 예시 </h2>
-    <input type="text" placeholder="기본 타입입니다.">
-    <input type="button" placeholder="버튼입니다." value="버튼 타이틀" onclick="typeBtn();">
-    <input type="checkbox" placeholder="체크박스입니다." name="value1" value="value1" checked> 체크박스
-    <input type="color" name="favcolor" value="#ed195e">
-    <input type="date" name="bday">
-    <input type="datetime-local" name="bdaytimelocal">
-    <input type="datetime" name="bdaytime">
-    <input type="email" placeholder="이메일입니다.">
-    <input type="file" placeholder="파일입니다.">
-    <input type="number" placeholder="숫자입니다.">
-    <input type="password" placeholder="비밀번호입니다.">
-    <input type="radio" name="tax" value="1" checked> 라디오버튼1
-    <input type="radio" name="tax" value="2"> 라디오버튼2
-    <input type="range" name="grade" min="0" max="100">
-    <form action="">
-        <input type="text" maxlength="10" placeholder="아무거나 입력하세요. text 입니다.">
-        <input type="tel" name="phone" placeholder="전화번호를 입력하세요.">
-        <input type="url" name="homepage" placeholder="url을 입력하세요">
-        <input type="week" name="week_year" placeholder="주차를 입력하세요.">
-        <input type="reset" value="초기화하기">
-        <input type="submit" value="폼 제출하기">
-    </form>
+    <h2>input 타입 별 예시 </h2>
+    <h3>데스크탑과 모바일에서 비교해보기</h3>
+    <div style="color: #000;">
+        <input type="text" placeholder="기본 타입입니다.">
+        <input type="button" placeholder="버튼입니다." value="버튼 타이틀" onclick="typeBtn();">
+        <input type="checkbox" placeholder="체크박스입니다." name="value1" value="value1" checked> 체크박스
+        <input type="color" name="favcolor" value="#ed195e">
+        <input type="date" name="bday">
+        <input type="datetime-local" name="bdaytimelocal">
+        <input type="email" placeholder="이메일입니다.">
+        <input type="file" placeholder="파일입니다.">
+        <input type="number" placeholder="숫자입니다.">
+        <input type="password" placeholder="비밀번호입니다.">
+        <input type="radio" name="tax" value="1" checked> 라디오버튼1
+        <input type="radio" name="tax" value="2"> 라디오버튼2
+        <input type="range" name="grade" min="0" max="100">
+        <form action="">
+            <input type="text" maxlength="10" placeholder="아무거나 입력하세요. text 입니다.">
+            <input type="tel" name="phone" placeholder="전화번호를 입력하세요.">
+            <input type="url" name="homepage" placeholder="url을 입력하세요">
+            <input type="week" name="week_year" placeholder="주차를 입력하세요.">
+            <input type="reset" value="초기화하기">
+            <input type="submit" value="폼 제출하기">
+        </form>
+    </div>
+
 
 
 
@@ -81,8 +88,5 @@
         function typeBtn() {
             alert('버튼 클릭 됨!');
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
