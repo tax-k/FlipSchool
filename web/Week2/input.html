@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+
+        input {
+            display: block;
+        }
+
+        ;
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="기본 타입입니다.">
+    <input type="button" placeholder="버튼입니다." value="버튼 타이틀" onclick="typeBtn();">
+    <input type="checkbox" placeholder="체크박스입니다." name="value1" value="value1" checked> 체크박스
+    <input type="color" name="favcolor" value="#ed195e">
+    <input type="date" name="bday">
+    <input type="datetime-local" name="bdaytimelocal">
+    <input type="datetime" name="bdaytime">
+    <input type="email" placeholder="이메일입니다.">
+    <input type="file" placeholder="파일입니다.">
+    <input type="number" placeholder="숫자입니다.">
+    <input type="password" placeholder="비밀번호입니다.">
+    <input type="radio" name="tax" value="1" checked> 라디오버튼1
+    <input type="radio" name="tax" value="2"> 라디오버튼2
+    <input type="range" name="grade" min="0" max="100">
+    <form action="">
+        <input type="text" maxlength="10" placeholder="아무거나 입력하세요. text 입니다.">
+        <input type="tel" name="phone" placeholder="전화번호를 입력하세요.">
+        <input type="url" name="homepage" placeholder="url을 입력하세요">
+        <input type="week" name="week_year" placeholder="주차를 입력하세요.">
+        <input type="reset" value="초기화하기">
+        <input type="submit" value="폼 제출하기">
+    </form>
+
+
+
+    <script>
+        function typeBtn() {
+            alert('버튼 클릭 됨!');
+        }
+    </script>
+</body></html>
