@@ -12,7 +12,8 @@
             font-family: monospace;
         }
 
-        h2 {
+        h2,
+        h3 {
             color: #000;
         }
 
@@ -32,6 +33,7 @@
             color: #000;
             display: block;
         }
+
     </style>
 </head>
 
@@ -45,6 +47,7 @@
     <h2 style="color: #000;">Attributes</h2>
 
     <a href="http://home.modulabs.co.kr" target="_blank" title="모두의연구소 홈페이지에서 풀잎 신청하기">풀잎 신청하기</a>
+    <a href="#bookmark">북마크로 이동</a>
 
     <input type="text">
     <input type="text" disabled>
@@ -52,13 +55,12 @@
 
     <div>
         <p style="background: #fff; color:#000;">&lt;p&gt; 태그 글자는 html entities를 이용하여 이렇게 작성합니다. &lt;/p&gt;</p>
-
     </div>
 
     <h2>input 타입 별 예시 </h2>
-    <h3>데스크탑과 모바일에서 비교해보기</h3>
+    <h3 style="color: #000;">데스크탑과 모바일에서 비교해보기</h3>
     <div style="color: #000;">
-        <input type="text" placeholder="기본 타입입니다.">
+        <input type="text" placeholder="기본 타입입니다." autofocus>
         <input type="button" placeholder="버튼입니다." value="버튼 타이틀" onclick="typeBtn();">
         <input type="checkbox" placeholder="체크박스입니다." name="value1" value="value1" checked> 체크박스
         <input type="color" name="favcolor" value="#ed195e">
@@ -73,13 +75,17 @@
         <input type="radio" name="tax" value="2"> 라디오버튼2
         <input type="range" name="grade" min="0" max="100">
         <form action="">
-            <input type="text" maxlength="10" placeholder="아무거나 입력하세요. text 입니다.">
+            <input type="text" maxlength="10" placeholder="아무거나 입력하세요. text 입니다." required>
             <input type="tel" name="phone" placeholder="전화번호를 입력하세요.">
             <input type="url" name="homepage" placeholder="url을 입력하세요">
             <input type="week" name="week_year" placeholder="주차를 입력하세요.">
             <input type="reset" value="초기화하기">
             <input type="submit" value="폼 제출하기">
         </form>
+    </div>
+
+    <div>
+        <h3 id="bookmark">북마크 위치</h3>
     </div>
 
 
@@ -89,5 +95,8 @@
         function typeBtn() {
             alert('버튼 클릭 됨!');
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
